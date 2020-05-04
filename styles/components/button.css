@@ -1,0 +1,82 @@
+.button {
+  color: #ffffff;
+  background-color: #5094f2;
+  font-size: 22px;
+  display: inline-block;
+  margin: 0;
+  border-radius: 0;
+  border: 1px solid transparent;
+  padding: 0 12px;
+  outline: none;
+  text-transform: none;
+  text-align: center;
+  text-decoration: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.button:hover {
+  color: #ffffff;
+  background-color: #283f5f;
+  text-decoration: none;
+}
+.button:focus {
+  outline: none;
+}
+
+.button-icon::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../../images/tick.svg);
+  background-repeat: no-repeat;
+  margin-right: 15px;
+  height: 33px;
+  width: 33px;
+}
+
+.button-primary {
+  color: #ffffff;
+  background-color: green;
+}
+
+.button-primary:hover {
+  color: green;
+  background-color: #ffffff;
+  border-color: green;
+}
+.button-danger {
+  color: #ffffff;
+  background-color: red;
+}
+
+.button-danger:hover {
+  color: red;
+  background-color: #ffffff;
+  border-color: red;
+}
+
+.button-large {
+  padding: 22px 64px;
+}
+
+.button-medium {
+  padding: 12px 24px;
+}
+
+.button-full {
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  .button {
+    margin-left: 12px;
+  }
+
+  .button-icon::before {
+    background-size: cover;
+    height: 23px;
+    width: 23px;
+  }
+}
+  

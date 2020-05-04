@@ -1,0 +1,17 @@
+.footer::before {
+  content: "";
+  display: block;
+  border-top: 1px solid #e5e5e5;
+}
+
+.copyright {
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+@media (min-width: 640px) {
+  .copyright {
+    padding: 33px 0;
+  }
+}
